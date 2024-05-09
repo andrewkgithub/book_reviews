@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forms.css">
+    <title>Add a New Book</title>
+</head>
+<body>
+    <h1>Add a New Book</h1>
+    <!-- Form for adding a new book -->
+    <form action="/add-book" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+        
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn">
+        
+        <label for="rating">Rating out of 5:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        
+        <label for="read_date">Read Date:</label>
+        <input type="date" id="read_date" name="read_date">
+        
+        <label for="review">Review:</label>
+        <textarea id="review" name="review"></textarea>
+        
+        <button type="submit">Add Book</button>
+    </form>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Andrew Kim. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

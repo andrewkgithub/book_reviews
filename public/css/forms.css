@@ -1,0 +1,90 @@
+/* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in width and height calculations */
+}
+
+/* Body styles shared across form pages */
+body {
+    font-family: Arial, sans-serif; /* Set default font family */
+    background-image: url('/images/wood-texture.jpg'); /* Background image for consistency across form pages */
+    background-size: cover; /* Ensure the background covers the entire body */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background position during scrolling */
+    background-color: #f0f0f0; /* Fallback background color if image fails to load */
+}
+
+/* Style settings for form containers */
+form {
+    max-width: 500px; /* Limit the width of forms to 500px */
+    margin: 20px auto; /* Center forms horizontally within the page */
+    padding: 20px; /* Add padding inside the form elements */
+    background-color: #fff; /* Set a white background for forms */
+    border-radius: 8px; /* Round the corners of the forms */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Apply a light shadow for 3D effect */
+}
+
+/* Styling for headings within forms */
+h1 {
+    color: white; /* White text for headings for better contrast */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Top margin for the heading */
+    margin-bottom: 20px; /* Bottom margin for the heading */
+}
+
+/* Default styles for labels in forms for clarity and consistency */
+label {
+    display: block; /* Make each label appear on a new line */
+    margin-bottom: 8px; /* Space below each label for clear separation */
+}
+
+/* Uniform styles for text inputs, number inputs, date inputs, and textareas */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%; /* Full width to fit container */
+    padding: 10px; /* Padding for better text visibility and interaction */
+    margin-bottom: 15px; /* Space below each input for separation */
+    border: 1px solid #ccc; /* Subtle border styling */
+    border-radius: 4px; /* Rounded corners for aesthetics */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 16px; /* Font size for readability */
+}
+
+/* Styling for submit buttons to make them prominent and accessible */
+button[type="submit"] {
+    background-color: #4CAF50; /* Green background to signify action */
+    color: white; /* White text for contrast */
+    padding: 14px 20px; /* Padding for ease of clicking */
+    margin: 8px 0; /* Vertical margin for spacing */
+    border: none; /* No border for a cleaner look */
+    border-radius: 4px; /* Rounded corners to match form aesthetics */
+    cursor: pointer; /* Cursor hint for clickable action */
+    width: 100%; /* Full width to fit container */
+    font-size: 16px; /* Font size for easy reading */
+}
+
+/* Hover effect for submit buttons to provide visual feedback */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover for button interaction */
+}
+
+/* Styles for the footer to ensure it's visually consistent across forms */
+footer {
+    color: white; /* White text for visibility */
+    text-align: center; /* Center text within the footer */
+    padding: 20px 0; /* Padding above and below the text */
+    font-size: 16px; /* Font size for legibility */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Ensure it spans the width of the screen */
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 600px) {
+    form {
+        width: 90%; /* Reduce width to fit smaller screens */
+        padding: 10px; /* Reduce padding to maintain proportions */
+    }
+}

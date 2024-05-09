@@ -1,0 +1,144 @@
+/* Resetting default margin and padding for common elements */
+body, h1, h2, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles for body element */
+body {
+    font-family: Arial, sans-serif;  /* Setting the default font */
+    background-image: url('/images/wood-texture.jpg'); /* Background image for the entire page */
+    background-size: cover;  /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-attachment: fixed;  /* Keeps the background fixed during scrolling */
+    color: #333;  /* Default text color */
+    line-height: 1.6;  /* Spacing between lines of text */
+    padding: 20px;  /* Padding around the content of the page */
+    background-color: #f0f0f0; /* Fallback background color if the image fails to load */
+}
+
+/* Styling for main headers */
+h1 {
+    text-align: center;  /* Centers the header text horizontally */
+    margin-bottom: 20px;  /* Space below the header */
+    color: rgb(255, 255, 255);  /* Text color */
+}
+
+/* Styling for the add book link */
+.add_book {
+    text-align: center;  /* Centers the content horizontally */
+    margin-bottom: 20px;  /* Space below the section */
+}
+
+/* Specific styles for links in the add_book class */
+.add_book a {
+    display: inline-block;  /* Allows margin and padding adjustments */
+    background-color: #4CAF50;  /* Green background color */
+    color: white;  /* White text color */
+    text-decoration: none;  /* No underline on the text */
+    padding: 14px 20px;  /* Padding around the text */
+    border-radius: 4px;  /* Rounded corners */
+    font-size: 18px;  /* Text size */
+    line-height: 1.5;  /* Line height */
+    transition: background-color 0.3s;  /* Transition effect for hover */
+}
+
+/* Hover effect for links in the add_book class */
+.add_book a:hover {
+    background-color: #45a049;  /* Darker green when hovered */
+}
+
+/* Styling for the sorting section */
+.sort {
+    text-align: center;  /* Centers the content horizontally */
+    margin-bottom: 20px;  /* Space below the section */
+    color: white;  /* Text color */
+}
+
+/* Styles for each book displayed */
+.book {
+    display: flex;  /* Uses flexbox for layout */
+    align-items: flex-start;  /* Aligns items to the start of the flex container */
+    background-color: #fff;  /* White background for visibility */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for 3D effect */
+    padding: 20px;  /* Padding inside each book container */
+    margin-bottom: 20px;  /* Space between book entries */
+}
+
+/* Styles for the book cover image container */
+.book-cover {
+    flex: 0 0 150px;  /* Flex basis of 150px, no grow, no shrink */
+    margin-right: 20px;  /* Space to the right of the image */
+}
+
+/* Ensures the book cover images fully occupy their containers */
+.book-cover img {
+    width: 100%;  /* Full width of the container */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 4px;  /* Rounded corners for images */
+}
+
+/* Styles for the details section of each book */
+.book-details {
+    flex: 1;  /* Allows the section to grow and fill available space */
+}
+
+/* Margin beneath headers and paragraphs in book details */
+.book-details h2, .book-details p {
+    margin-bottom: 10px;
+}
+
+/* Styles for links and forms within book details */
+.book-details a, .book-details form {
+    margin-top: 10px;  /* Space above the element */
+}
+
+/* General styles for links and buttons within a book entry */
+.book a, .book button {
+    display: inline-block;  /* Allows block level properties */
+    background-color: #007bff;  /* Blue background */
+    color: #fff;  /* White text */
+    text-decoration: none;  /* No underline */
+    padding: 8px 16px;  /* Padding around text */
+    border-radius: 4px;  /* Rounded corners */
+    margin-right: 10px;  /* Space to the right */
+    font-size: 16px;  /* Text size */
+    line-height: 1.5;  /* Line height */
+    box-sizing: border-box;  /* Border and padding included in width/height */
+}
+
+/* Hover effects for links */
+.book a:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Inline styles for forms in book entries */
+.book form {
+    display: inline-block;  /* Allows block level properties */
+}
+
+/* Styles for buttons, specifically delete buttons in this context */
+.book button {
+    background-color: #dc3545;  /* Red background */
+    color: #fff;  /* White text */
+    border: none;  /* No border */
+    padding: 8px 16px;  /* Padding around text */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Cursor indicates clickable */
+}
+
+/* Hover effects for buttons */
+.book button:hover {
+    background-color: #c82333;  /* Darker red on hover */
+}
+
+/* Styling for the footer, consistent across pages */
+footer {
+    text-align: center;  /* Centers text horizontally */
+    padding: 20px 0;  /* Padding above and below text */
+    font-size: 16px;  /* Text size */
+    bottom: 0;  /* Anchors footer to the bottom */
+    width: 100%;  /* Full width of the viewport */
+    color: white;  /* White text */
+}

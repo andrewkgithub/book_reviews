@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main-page.css">
+    <title>Book Reviews</title>
+</head>
+<body>
+    <h1>My Book Reviews</h1>
+
+    <!-- Link to add a new book -->
+    <div class="add_book">
+        <a href="/add-book">Add a Book</a>
+    </div>
+
+    <!-- Dropdown to sort books -->
+    <div class="sort">
+        <form action="/" method="get">
+            <label for="sort"><strong>Sort by:</strong></label>
+            <select id="sort" name="sort" onchange="this.form.submit()">
+                <option value="recent" <% if (!sort || sort === 'recent') { %>selected<% } %>>Most Recent</option>
+                <option value="rating" <% if (sort === 'rating') { %>selected<% } %>>Highest Rating</option>
+            </select>
+        </form>
+    </div>
+    
+    <!-- Loop through each book and display its details -->
+    <% books.forEach(function(book) { %>
+        <div class="book">
+            <div class="book-cover">
+                <img src="<%= book.cover %>" alt="<%= book.title %> cover">
+            </div>
+            <div class="book-details">
+                <h2><%= book.title %> by <%= book.author %></h2>
+                <p><strong>Review:</strong> <%= book.review %></p>
+                <p><strong>Rating:</strong> <%= book.rating %>/5</p>
+                <p><strong>Date Read:</strong> <%= book.read_date.toISOString().split('T')[0] %></p>
+                <a href="/edit-book/<%= book.id %>">Edit</a>
+                <form action="/delete-book/<%= book.id %>" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    <% }); %>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Andrew Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
