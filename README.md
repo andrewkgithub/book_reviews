@@ -1,6 +1,6 @@
 # Book Reviews Web Application
 
-This is a web application that allows users to manage and recall information about books they've read. Inspired by Derek Sivers' website, the application integrates with the Open Library Covers API to fetch book covers and utilizes a PostgreSQL database for data persistence.
+This is a web application that allows users to manage and recall information about books they've read. The application integrates with the Open Library Covers API to fetch book covers and utilizes a PostgreSQL database for data persistence.
 
 ## Features
 
@@ -9,6 +9,18 @@ This is a web application that allows users to manage and recall information abo
 - Edit existing book details.
 - Delete books from the collection.
 - Sort books by rating or recency.
+
+## Snapshots
+
+### Homepage
+![image](https://github.com/user-attachments/assets/222257f3-fc58-403d-ae75-65f63beea712)
+
+### Add a Book
+![image](https://github.com/user-attachments/assets/a50f7110-a98e-4cc2-89a5-fe640ec319b2)
+
+### Edit a Book
+![image](https://github.com/user-attachments/assets/43a91baf-62fd-4ff0-81c8-4d61c8e22c9d)
+
 
 ## Setup Instructions
 
